@@ -1,0 +1,22 @@
+2048 game made using Python and Tkinter
+
+Classes
+1. Board
+    Variables:
+              i. bg_color: Backgrouund color is stored
+              ii. color: Foreground color is stores
+              iii. gridCell : Stores values in each cell
+              iv. score : Stores current score
+              v. board : 4*4 grid tkinter widget displaying the playing board
+     Functions  :
+              i. reverse : reverses the gridCell
+              ii. transpose : transposes the gridCell
+              iii. compressGrid : moves empty cells to the left for easy merging
+              iv. mergeGrid : merges grids if they have same gridCell values
+              v. random_cell : makes a random empty cell's value 2
+              vi. can_merge : checks if two cells have same values and can be merged
+
+2. Game
+     Functions:
+               i. start : randomly assigns value 2 to any two cells and makes call to link_keys
+               ii. link_keys : checks if game has ended, if not takes arrow keys as input and continues execution
